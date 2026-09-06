@@ -1,11 +1,11 @@
-# Sector Overview – Testplan
+# Sectorscanner – Testplan
 
 **Status:** Aktiv.  
 **Zentrale Regelquelle:** `workflow/TEST_STANDARD.md`
 
 ## 1. Projektbezogene Testbasis
 
-**Projekt:** Sector Overview  
+**Projekt:** Sectorscanner  
 **Deklarierter Entwicklungsbranch:** `main`  
 **Aktives Versionsziel:** `V1.0.0`  
 **Relevante X4-Version:** technisch unbestätigt
@@ -19,15 +19,15 @@
 - [ ] Filter, Sortierung, Paging und Targeting der Cockpit-Sektorübersicht funktionieren im vorgesehenen Teststand.
 - [ ] Extension-only-/Workshop-only-Konformität ist für den getesteten Stand bestätigt.
 
-Historischer Hinweis: Die Kombination aus gesplittetem Veteran Ships und separat installierter Sector Overview wurde vor Einrichtung dieses Testregisters erfolgreich getestet. Dieser Alt-Nachweis erhält rückwirkend keine neue TEST-ID und ersetzt `TEST-001` nicht.
+Historischer Hinweis: Die Kombination aus gesplittetem Veteran Ships und separat installiertem Sectorscanner wurde vor Einrichtung dieses Testregisters erfolgreich getestet. Dieser Alt-Nachweis erhält rückwirkend keine neue TEST-ID und ersetzt `TEST-001` nicht.
 
 ---
 
-## 2. TEST-001 – Eigenständiger Sector-Overview-Modtest
+## 2. TEST-001 – Eigenständiger Sectorscanner-Modtest
 
 **Status:** Test erforderlich  
 **Abhängigkeit:** `ORGA-003` abgeschlossen.  
-**Testgegenstand:** Der eigenständige Sector-Overview-Stand auf `main` als Vorbereitung auf Veröffentlichung und V1.0.0.
+**Testgegenstand:** Der eigenständige Sectorscanner-Stand auf `main` als Vorbereitung auf Veröffentlichung und V1.0.0.
 
 ### Verbindliche Testbereiche
 
@@ -48,7 +48,7 @@ Historischer Hinweis: Die Kombination aus gesplittetem Veteran Ships und separat
    - Öffnen/Schließen bzw. Aktivieren/Deaktivieren der Anzeige bleibt stabil.
 
 4. **Debuglog**
-   - Debuglog auf Sector-Overview-bezogene XML-/MD-/Lua-/UI-Fehler prüfen.
+   - Debuglog auf Sectorscanner-bezogene XML-/MD-/Lua-/UI-Fehler prüfen.
    - Der deterministische Projekt-Watcher darf zur Übernahme/Filterung genutzt werden; er ersetzt nicht die praktische Bewertung.
 
 5. **Extension-only / Workshop-only**

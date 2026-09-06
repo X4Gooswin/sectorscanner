@@ -1,11 +1,11 @@
-# Sector Overview – TODO
+# Sectorscanner – TODO
 
 **Status:** Aktiv.  
 **Zentrale Regelquelle:** `workflow/PROJECT_CONTROL.md`
 
 Diese Datei enthält ausschließlich die noch offene Arbeit bis zum aktiven Versionsziel `V1.0.0`.
 
-## TEST-001 – Sector Overview als eigenständige Mod praktisch testen
+## TEST-001 – Sectorscanner als eigenständige Mod praktisch testen
 
 **Status:** Test erforderlich  
 **Priorität:** hoch  
@@ -17,7 +17,7 @@ Diese Datei enthält ausschließlich die noch offene Arbeit bis zum aktiven Vers
 - Extension-only-/Workshop-only-Konformität bestätigen.
 - Ergebnis dauerhaft in `documentation/TEST_PLAN.md` nachführen.
 
-## TODO-001 – Sector Overview veröffentlichen
+## TODO-001 – Sectorscanner veröffentlichen
 
 **Status:** offen  
 **Priorität:** hoch  

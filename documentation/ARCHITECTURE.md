@@ -1,10 +1,10 @@
-# Sector Overview – Architektur
+# Sectorscanner – Architektur
 
 **Status:** Aktiv
 
 ## 1. Ziel und Projektgrenze
 
-Sector Overview ist eine eigenständige X4-Extension für eine Cockpit-Sektorübersicht mit Filterung, Sortierung, Paging und Targeting.
+Sectorscanner ist eine eigenständige X4-Extension für eine Cockpit-Sektorübersicht mit Filterung, Sortierung, Paging und Targeting.
 
 Die Runtime bleibt vollständig innerhalb des eigenen Extension-Verzeichnisses. Basisspieldateien werden nicht direkt verändert oder ersetzt.
 
@@ -12,14 +12,14 @@ Die Runtime bleibt vollständig innerhalb des eigenen Extension-Verzeichnisses. 
 
 - Repository: `X4Gooswin/sectorscanner`
 - Entwicklungsbranch: `main`
-- Extension-ID: `gooswin_sector_overview`
-- Anzeigename: `Sector Overview`
+- Extension-ID: `sectorscanner`
+- Anzeigename: `Sectorscanner`
 - `save="0"` laut `content.xml`
 - Abhängigkeiten laut `content.xml`:
   - SirNukes Mod Support APIs — `ws_2042901274`
   - UI Extensions and HUD — `ws_3477279743`
 
-Eine reale Steam-Workshop-ID für Sector Overview ist im aktuellen Planungsstand noch nicht verbindlich eingetragen. Sie wird erst nach der tatsächlichen Veröffentlichung übernommen (`TODO-002`).
+Eine reale Steam-Workshop-ID für Sectorscanner ist im aktuellen Planungsstand noch nicht verbindlich eingetragen. Sie wird erst nach der tatsächlichen Veröffentlichung übernommen (`TODO-002`).
 
 ## 3. Runtime-Verantwortung
 
@@ -27,8 +27,8 @@ Eine reale Steam-Workshop-ID für Sector Overview ist im aktuellen Planungsstand
 |---|---|
 | `content.xml` | Extension-Metadaten und deklarierte Abhängigkeiten |
 | `ui.xml` | UI-Registrierung/Anbindung der Extension |
-| `md/sector_scanner_core.xml` | MD-Kernlogik der Sector Overview |
-| `md/sector_scanner_options.xml` | MD-seitige Optionen/Zustände der Sector Overview |
+| `md/sector_scanner_core.xml` | MD-Kernlogik von Sectorscanner |
+| `md/sector_scanner_options.xml` | MD-seitige Optionen/Zustände von Sectorscanner |
 | `ui/sector_scanner.lua` | Cockpit-HUD-/Listenlogik |
 | `t/0001-L###.xml` | lokalisierte Texte in den vorhandenen zehn Sprachdateien |
 
@@ -43,7 +43,7 @@ Die bestehende Runtime wird durch die Organisationsarbeit ORGA-002 nicht veränd
 | `debug/archive/` | ältere projektbezogene Debug-Testartefakte innerhalb der Retention |
 | `tools/Start-X4DebugWatcher.cmd` | Starthelfer für den lokalen deterministischen Debug-Watcher |
 | `tools/Watch-X4Debug.ps1` | sichere Logübernahme, Retention und eng begrenzte Git-Synchronisierung von `debug/**` |
-| `tools/prepare_debug_analysis.py` | deterministische, lokale Filterung von X4-Debuglogs auf Sector-Overview-Bezug |
+| `tools/prepare_debug_analysis.py` | deterministische, lokale Filterung von X4-Debuglogs auf Sectorscanner-Bezug |
 
 Die Debug-Infrastruktur führt keine KI-/API-Analyse aus.
 

@@ -1,4 +1,4 @@
-# Sector Overview – Abarbeitungshistorie
+# Sectorscanner – Abarbeitungshistorie
 
 **Status:** Aktiv.  
 **Zentrale Regelquelle:** `workflow/DOCUMENTATION_STANDARD.md`
@@ -9,7 +9,7 @@
 **Abschluss:** 06.09.2026
 
 - `WORKFLOW_BOOTSTRAP.md` und die grundlegende zentrale Projektsteuerung wurden eingerichtet.
-- Die separate Sector-Overview-Runtime blieb erhalten.
+- Die separate Sectorscanner-Runtime blieb erhalten.
 - Historischer Organisationsstand war der zentrale Workflow V2.0.0.
 
 ## ORGA-002 – Workflow V3.1.0 und Arbeitsinfrastruktur hergestellt

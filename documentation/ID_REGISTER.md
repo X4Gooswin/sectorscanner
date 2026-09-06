@@ -1,4 +1,4 @@
-# Sector Overview – ID-Register
+# Sectorscanner – ID-Register
 
 **Status:** Aktiv.  
 **Zentrale Regelquelle:** `workflow/PROJECT_CONTROL.md`

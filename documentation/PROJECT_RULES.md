@@ -1,4 +1,4 @@
-# Sector Overview – Project Rules / Workflow Overlay
+# Sectorscanner – Project Rules / Workflow Overlay
 
 **Status:** Aktiv.  
 **Bootstrap:** `WORKFLOW_BOOTSTRAP.md`
@@ -7,7 +7,7 @@ Diese Datei enthält nur projektspezifische Ergänzungen und ausdrücklich freig
 
 ## 1. Verbindlicher Workflow-Pin
 
-Für Sector Overview gilt ausschließlich der Workflow-Pin aus `WORKFLOW_BOOTSTRAP.md`.
+Für Sectorscanner gilt ausschließlich der Workflow-Pin aus `WORKFLOW_BOOTSTRAP.md`.
 
 Chatübergaben, Starttexte, Gesprächszusammenfassungen, frühere Chats oder ein aktuellerer Stand von `X4Gooswin/x4_modding_workflow` dürfen diesen Pin nicht ersetzen. Ein Workflow-Upgrade erfolgt ausschließlich kontrolliert nach dem gepinnten `workflow/CHATSTART.md`.
 
@@ -37,16 +37,16 @@ Keine.
 
 Wenn der exakte Ausgangszustand oder die sichere Begrenzung nicht eindeutig feststeht, greift die Automatik nicht. Dann wird gestoppt und eine neue Entscheidung/Freigabe eingeholt.
 
-## 5. Projektbezogene automatische Ausnahme – Sector-Overview-Debug-Watcher
+## 5. Projektbezogene automatische Ausnahme – Sectorscanner-Debug-Watcher
 
 Der deterministische Debug-Watcher unter `tools/Watch-X4Debug.ps1` ist die zweite und einzige weitere automatische Ausnahme von der allgemeinen Freigabecodepflicht.
 
 | Feld | Inhalt |
 |---|---|
-| Name der Automatik | Sector Overview X4-Debug-Watcher |
-| Zweck | X4-Debuglogs sicher übernehmen, deterministisch auf Sector-Overview-Bezug filtern, nach der definierten Aufbewahrungsregel verwalten und ausschließlich die vorgesehenen Debugartefakte mit GitHub synchronisieren. |
+| Name der Automatik | Sectorscanner X4-Debug-Watcher |
+| Zweck | X4-Debuglogs sicher übernehmen, deterministisch auf Sectorscanner-Bezug filtern, nach der definierten Aufbewahrungsregel verwalten und ausschließlich die vorgesehenen Debugartefakte mit GitHub synchronisieren. |
 | Auslöser/Bedingung | Watcher läuft lokal; Debugverarbeitung erfolgt nach seinem implementierten Ablauf bei beendetem X4 und vorhandenen bzw. noch nicht vollständig gefilterten Debuglogs. |
-| Erlaubte Dateien/Daten | Debuglog-Quelle unter dem lokalen X4-Dokumentpfad; globale Sector-Overview-Debug-Zwischenablage außerhalb des Repositorys; innerhalb des Repositorys ausschließlich `debug/**`. |
+| Erlaubte Dateien/Daten | Debuglog-Quelle unter dem lokalen X4-Dokumentpfad; globale Sectorscanner-Debug-Zwischenablage außerhalb des Repositorys; innerhalb des Repositorys ausschließlich `debug/**`. |
 | Erlaubte lokale Zustandsänderungen | Debuglogs kopieren und per SHA256 verifizieren; deterministische Filterdateien erzeugen; Debugartefakte nach der implementierten Aufbewahrungsregel innerhalb `debug/**` verschieben bzw. alte vollständige Testsätze löschen; nach sicherer Übernahme die verarbeitete X4-`debuglog.txt` entfernen; globale Inbox nach erfolgreichem GitHub-Push bereinigen. |
 | Erlaubte Git-Aktionen | ausschließlich auf Branch `main`: Branchprüfung; `git pull --rebase --autostash origin main`; ausschließlich `debug/**` stagen; Debug-Commit erzeugen; nach `origin/main` pushen. |
 | Abweichendes Commitformat | ausschließlich für diesen Watcher: `debug: ...` |
@@ -61,8 +61,8 @@ Die Filterung über `tools/prepare_debug_analysis.py` ist deterministisch. Der W
 |---|---|---|
 | Entwicklungsbranch | `main` | `WORKFLOW_BOOTSTRAP.md` |
 | Aktives Versionsziel | `V1.0.0` | `documentation/PROJECT_STATUS.md`, `documentation/ROADMAP.md` |
-| Extension-ID | `gooswin_sector_overview` | `content.xml` |
-| Anzeigename | `Sector Overview` | `content.xml` |
+| Extension-ID | `sectorscanner` | `content.xml` |
+| Anzeigename | `Sectorscanner` | `content.xml` |
 | Save-Relevanz | `save="0"` | `content.xml` |
 | Abhängigkeiten | SirNukes Mod Support APIs und UI Extensions and HUD | `content.xml` |
 

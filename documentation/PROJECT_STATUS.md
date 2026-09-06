@@ -1,4 +1,4 @@
-# Sector Overview – Projektstatus
+# Sectorscanner – Projektstatus
 
 **Status:** Aktiv.  
 **Zentrale Regelquelle:** `workflow/PROJECT_CONTROL.md`
@@ -6,7 +6,7 @@
 ## Aktueller Steuerungsstand
 
 **Aktives Versionsziel:** `V1.0.0`.  
-**Aktueller Fokus:** `TEST-001 – Sector Overview als eigenständige Mod praktisch testen`.  
+**Aktueller Fokus:** `TEST-001 – Sectorscanner als eigenständige Mod praktisch testen`.  
 **Nächster projektweiter Arbeitsschritt:** Eigenständige Extension in X4 laden und den vorgesehenen praktischen Modtest durchführen; Veröffentlichung erst nach bestandenem `TEST-001`.
 
 ---
@@ -17,11 +17,11 @@
 - Branch: `main`
 - Runtime-Ausgangscommit vor der V3.1.0-Organisationsarbeit: `5c504e27450844834ac09e6b1e1ab082af6fa350`
 - Vorheriger erhaltener Split-Basiscommit: `ee4a953b573797ae9cf30c62c54e2c011f3bfb2c`
-- Extension-Name: `Sector Overview`
-- Extension-ID: `gooswin_sector_overview`
+- Extension-Name: `Sectorscanner`
+- Extension-ID: `sectorscanner`
 - Abhängigkeiten laut `content.xml`: SirNukes Mod Support APIs und UI Extensions and HUD.
 
-Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separater Sector Overview war erfolgreich. Dieser historische Nachweis wird nicht als neuer Testlauf unter `TEST-001` umetikettiert.
+Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separatem Sectorscanner war erfolgreich. Dieser historische Nachweis wird nicht als neuer Testlauf unter `TEST-001` umetikettiert.
 
 ---
 
@@ -37,8 +37,8 @@ Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separater Sec
 ## Verbindliche Arbeitsreihenfolge bis V1.0.0
 
 1. `ORGA-003` – abgeschlossen: lokales Arbeitsverzeichnis sauber eingerichtet.
-2. `TEST-001` – aktueller Fokus: Sector Overview als eigenständige Mod praktisch testen.
-3. `TODO-001` – Sector Overview veröffentlichen.
+2. `TEST-001` – aktueller Fokus: Sectorscanner als eigenständige Mod praktisch testen.
+3. `TODO-001` – Sectorscanner veröffentlichen.
 4. `TODO-002` – nach Veröffentlichung die reale `ws_ZAHL` in der dann tatsächlich zuständigen Projektdatei eintragen; die zuständige Datei wird nicht vorab geraten.
 5. `ORGA-004` – den bestätigten Veröffentlichungsstand als unveränderlichen Branch `V1.0.0` ablegen.
 

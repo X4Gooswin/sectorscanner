@@ -1,4 +1,4 @@
-# Sector Overview – Dokumentationsnavigation
+# Sectorscanner – Dokumentationsnavigation
 
 **Status:** Aktiv
 

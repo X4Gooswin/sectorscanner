@@ -1,13 +1,13 @@
 # Workflow Bootstrap
 
 **Status:** Aktiv.  
-**Zweck:** Verbindliche Zuordnung von Sector Overview zu einem exakt gepinnten zentralen Workflow-Stand.
+**Zweck:** Verbindliche Zuordnung von Sectorscanner zu einem exakt gepinnten zentralen Workflow-Stand.
 
 ## 1. Projekt
 
 ```yaml
 project:
-  name: "Sector Overview"
+  name: "Sectorscanner"
   repository: "X4Gooswin/sectorscanner"
   development_branch: "main"
 ```
@@ -23,7 +23,7 @@ workflow:
 
 `version` und `commit_sha` sind gemeinsam verbindlich. Eine neuere Workflow-Version wird nicht automatisch übernommen.
 
-**Ausschließlich dieser Bootstrap definiert den für Sector Overview verbindlichen Workflow-Pin.** Chatübergaben, Starttexte, Zusammenfassungen, frühere Gesprächsinhalte oder ein aktuellerer Stand des Workflow-Repositories dürfen Version oder Commit-SHA nicht ersetzen.
+**Ausschließlich dieser Bootstrap definiert den für Sectorscanner verbindlichen Workflow-Pin.** Chatübergaben, Starttexte, Zusammenfassungen, frühere Gesprächsinhalte oder ein aktuellerer Stand des Workflow-Repositories dürfen Version oder Commit-SHA nicht ersetzen.
 
 ## 3. Projektspezifische Regeln und Abweichungen
 
@@ -37,7 +37,7 @@ project_rules:
 Die ausdrücklich dokumentierten automatischen Ausnahmen stehen ausschließlich in `documentation/PROJECT_RULES.md`:
 
 - Fehler-Rollback innerhalb einer bereits freigegebenen Änderungseinheit,
-- deterministischer Sector-Overview-Debug-Watcher für den dort eng begrenzten Debug-/Git-Ablauf.
+- deterministischer Sectorscanner-Debug-Watcher für den dort eng begrenzten Debug-/Git-Ablauf.
 
 ## 4. Projektquellen
 
@@ -84,7 +84,7 @@ Technische Quellen werden nur bei Relevanz für den aktuellen Arbeitspunkt geles
 
 ## 6. Fast Path
 
-Der zentrale Workflow V3.1.0 stellt einen optionalen Fast Path bereit. Sector Overview hat mit diesem Organisationsstand **keine projektspezifischen Fast-Path-Artefakte aktiviert**. Solange kein gültiger projektspezifischer Fast Path eingerichtet und verifiziert wurde, gilt der vollständige Startpfad des gepinnten Workflows.
+Der zentrale Workflow V3.1.0 stellt einen optionalen Fast Path bereit. Sectorscanner hat mit diesem Organisationsstand **keine projektspezifischen Fast-Path-Artefakte aktiviert**. Solange kein gültiger projektspezifischer Fast Path eingerichtet und verifiziert wurde, gilt der vollständige Startpfad des gepinnten Workflows.
 
 ## 7. Quellenhierarchie
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-07 – extension identity correction
+
+- changed the extension id from `gooswin_sector_overview` to `sectorscanner`
+- changed the display name from `Sector Overview` to `Sectorscanner`
+- aligned project documentation to the canonical name `Sectorscanner`
+- no MD, Lua or UI functional logic was changed
+
 ## 2026-09-07 – sync metadata correction
 
 - added `sync="false"` to the root `<content>` element in `content.xml`
@@ -7,7 +14,7 @@
 
 ## 2026-09-07 – ORGA-003
 
-- established the local Sector Overview working directory at `C:\Program Files (x86)\Steam\steamapps\common\X4 Foundations\extensions\sectorscanner`
+- established the local Sectorscanner working directory at `C:\Program Files (x86)\Steam\steamapps\common\X4 Foundations\extensions\sectorscanner`
 - cloned `X4Gooswin/sectorscanner` directly into the empty target directory on branch `main`
 - verified local branch `main` and local HEAD `7c4bbdcdbed888dc24c0249ea13e3fc8075f86f0` against the intended remote state
 - verified a clean local working tree with `git status --short`
@@ -17,7 +24,7 @@
 ## 2026-09-07 – ORGA-002
 
 - upgraded `WORKFLOW_BOOTSTRAP.md` to central workflow V3.1.0 at `698d56838ae71d29e5a09ec95911c82ec9c92337`
-- made the project bootstrap the explicit sole source of the Sector Overview workflow pin
+- made the project bootstrap the explicit sole source of the Sectorscanner workflow pin
 - added architecture, roadmap and documentation navigation for the standalone mod
 - replaced the obsolete empty-project TODO state with the known ordered work through the planned V1.0.0 snapshot
 - registered ORGA-003, TEST-001, TODO-001, TODO-002 and ORGA-004 as the remaining ordered work
@@ -29,7 +36,7 @@
 
 - established `WORKFLOW_BOOTSTRAP.md` pinned to central workflow V2.0.0 at `8ba058aef8b0ffe06c3debf0dbb957e658fad43e`
 - added central project status, TODO control, TODO history, error log, stable ID register and project test plan
-- documented Sector Overview as secondary to Veteran Ships for the current project phase
+- documented Sectorscanner as secondary to Veteran Ships for the current project phase
 - established the project rule to prepare and verify a coherent work block before normally committing/pushing it once
 - added the narrowly scoped automatic rollback exception for restoring the documented pre-change state after a technical failure inside an already approved change unit
 
