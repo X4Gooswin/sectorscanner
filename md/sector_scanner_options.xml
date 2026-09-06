@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="sector_scanner_options" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="SectorScanner_Globals_001">
+      <actions>
+        <do_if value="not $contactlist_enabled?">
+          <set_value name="$contactlist_enabled" exact="true" />
+        </do_if>
+      </actions>
+    </cue>
+
+    <cue name="SectorScanner_RegisterOptionsMenu_001" instantiate="true" namespace="this">
+      <conditions>
+        <event_cue_signalled cue="md.Simple_Menu_API.Reloaded" />
+      </conditions>
+      <actions>
+        <signal_cue_instantly
+          cue="md.Simple_Menu_API.Register_Options_Menu"
+          param="table[
+            $id = 'sector_scanner_options',
+            $columns = 2,
+            $title = {987656,1},
+            $onOpen = SectorScanner_BuildOptionsMenu_001
+          ]"
+        />
+      </actions>
+    </cue>
+
+    <cue name="SectorScanner_BuildOptionsMenu_001" instantiate="true" namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <signal_cue_instantly cue="md.Simple_Menu_API.Add_Row" />
+
+        <signal_cue_instantly
+          cue="md.Simple_Menu_API.Make_Text"
+          param="table[
+            $col = 1,
+            $text = {987656,230},
+            $mouseOverText = {987656,231},
+            $cellBGColor = 'Color.optionsmenu_cell_background'
+          ]"
+        />
+
+        <signal_cue_instantly
+          cue="md.Simple_Menu_API.Make_Button"
+          param="table[
+            $col = 2,
+            $id = 'sector_scanner_sector_overview',
+            $text = table[
+              $text = if (SectorScanner_Globals_001.$contactlist_enabled) then {987656,201} else {987656,202},
+              $halign = 'center'
+            ],
+            $onClick = SectorScanner_ToggleSectorOverview_001
+          ]"
+        />
+      </actions>
+    </cue>
+
+    <cue name="SectorScanner_ToggleSectorOverview_001" instantiate="true" namespace="this">
+      <conditions>
+        <event_cue_signalled />
+      </conditions>
+      <actions>
+        <set_value
+          name="SectorScanner_Globals_001.$contactlist_enabled"
+          exact="not SectorScanner_Globals_001.$contactlist_enabled"
+        />
+        <raise_lua_event
+          name="'SectorScanner.Settings.ContactList'"
+          param="SectorScanner_Globals_001.$contactlist_enabled"
+        />
+        <signal_cue_instantly cue="md.Simple_Menu_API.Refresh_Menu" />
+      </actions>
+    </cue>
+
+    <cue name="SectorScanner_SettingsRequest_001" instantiate="true" namespace="this">
+      <conditions>
+        <event_ui_triggered screen="'SectorScanner'" control="'settings_request'" />
+      </conditions>
+      <actions>
+        <raise_lua_event
+          name="'SectorScanner.Settings.ContactList'"
+          param="SectorScanner_Globals_001.$contactlist_enabled"
+        />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>
