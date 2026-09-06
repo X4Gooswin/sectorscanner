@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="48">
+  <page id="987656" title="Sector Overview" descr="Sector Overview">
+    <t id="1">Sector Overview</t>
+    <t id="200">Aktywność sektora</t>
+    <t id="201">WŁ.</t>
+    <t id="202">WYŁ.</t>
+    <t id="203">Kategoria</t>
+    <t id="204">Statki</t>
+    <t id="205">Stacje</t>
+    <t id="206">Miny/Wieżyczki</t>
+    <t id="207">Kapsuły ratunkowe</t>
+    <t id="208">Relacja</t>
+    <t id="209">Wszystkie</t>
+    <t id="210">Własne</t>
+    <t id="211">Neutralne</t>
+    <t id="212">Wrogie</t>
+    <t id="213">Sortuj</t>
+    <t id="214">Rozmiar</t>
+    <t id="215">Nazwa</t>
+    <t id="216">Typ</t>
+    <t id="217">Odległość</t>
+    <t id="218">Brak widocznych statków</t>
+    <t id="219">Brak widocznych stacji</t>
+    <t id="220">Brak widocznych min/wrogich wieżyczek</t>
+    <t id="221">Brak widocznych kapsuł ratunkowych</t>
+    <t id="222">W górę</t>
+    <t id="223">W dół</t>
+    <t id="224">Stacja</t>
+    <t id="225">Mina</t>
+    <t id="226">Wieżyczka laserowa</t>
+    <t id="227">Kapsuła ratunkowa</t>
+    <t id="230">Przegląd sektora</t>
+    <t id="231">Całkowicie pokazuje lub ukrywa przegląd sektora w HUD kokpitu.</t>
+  </page>
+</language>
