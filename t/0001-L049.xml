@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="49">
+  <page id="987656" title="Sector Overview" descr="Sector Overview">
+    <t id="1">Sector Overview</t>
+    <t id="200">Sektoraktivität</t>
+    <t id="201">AN</t>
+    <t id="202">AUS</t>
+    <t id="203">Kategorie</t>
+    <t id="204">Schiffe</t>
+    <t id="205">Stationen</t>
+    <t id="206">Minen/Türme</t>
+    <t id="207">Rettungskapseln</t>
+    <t id="208">Beziehung</t>
+    <t id="209">Alle</t>
+    <t id="210">Eigene</t>
+    <t id="211">Neutral</t>
+    <t id="212">Feinde</t>
+    <t id="213">Sortieren</t>
+    <t id="214">Größe</t>
+    <t id="215">Name</t>
+    <t id="216">Typ</t>
+    <t id="217">Entfernung</t>
+    <t id="218">Keine sichtbaren Schiffe</t>
+    <t id="219">Keine sichtbaren Stationen</t>
+    <t id="220">Keine sichtbaren Minen/Feindtürme</t>
+    <t id="221">Keine sichtbaren Rettungskapseln</t>
+    <t id="222">Hoch</t>
+    <t id="223">Runter</t>
+    <t id="224">Station</t>
+    <t id="225">Mine</t>
+    <t id="226">Laserturm</t>
+    <t id="227">Rettungskapsel</t>
+    <t id="230">Sektorübersicht</t>
+    <t id="231">Blendet die Sektorübersicht im Cockpit-HUD vollständig ein oder aus.</t>
+  </page>
+</language>
