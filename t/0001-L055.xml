@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="55">
+  <page id="987656" title="Sector Overview" descr="Sector Overview">
+    <t id="1">Sector Overview</t>
+    <t id="200">Atividade do setor</t>
+    <t id="201">LIGADO</t>
+    <t id="202">DESLIGADO</t>
+    <t id="203">Categoria</t>
+    <t id="204">Naves</t>
+    <t id="205">Estações</t>
+    <t id="206">Minas/Torres</t>
+    <t id="207">Cápsulas de escape</t>
+    <t id="208">Relação</t>
+    <t id="209">Todos</t>
+    <t id="210">Próprios</t>
+    <t id="211">Neutros</t>
+    <t id="212">Inimigos</t>
+    <t id="213">Ordenar</t>
+    <t id="214">Tamanho</t>
+    <t id="215">Nome</t>
+    <t id="216">Tipo</t>
+    <t id="217">Distância</t>
+    <t id="218">Nenhuma nave visível</t>
+    <t id="219">Nenhuma estação visível</t>
+    <t id="220">Nenhuma mina/torre inimiga visível</t>
+    <t id="221">Nenhuma cápsula de escape visível</t>
+    <t id="222">Acima</t>
+    <t id="223">Abaixo</t>
+    <t id="224">Estação</t>
+    <t id="225">Mina</t>
+    <t id="226">Torre laser</t>
+    <t id="227">Cápsula de escape</t>
+    <t id="230">Visão do setor</t>
+    <t id="231">Mostra ou oculta completamente a visão do setor no HUD do cockpit.</t>
+  </page>
+</language>
