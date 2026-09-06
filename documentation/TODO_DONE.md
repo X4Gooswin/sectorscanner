@@ -23,3 +23,16 @@
 - Bekannte Arbeitsreihenfolge bis V1.0.0 mit stabilen IDs in Projektstatus und TODO gesichert.
 - Deterministische Debug-Infrastruktur unter `debug/` und `tools/` eingerichtet; keine KI-/API-Analyse.
 - Bestehende Runtime-Dateien (`content.xml`, `ui.xml`, `md/**`, `ui/**`, `t/**`) blieben unverändert.
+
+## ORGA-003 – Lokales Arbeitsverzeichnis sauber eingerichtet
+
+**Status:** abgeschlossen  
+**Abschluss:** 07.09.2026
+
+- Lokales Arbeitsverzeichnis unter `C:\Program Files (x86)\Steam\steamapps\common\X4 Foundations\extensions\sectorscanner` hergestellt.
+- Repository `X4Gooswin/sectorscanner` auf Branch `main` direkt in den leeren Zielordner geklont.
+- Lokaler Branch als `main` bestätigt.
+- Lokaler HEAD als `7c4bbdcdbed888dc24c0249ea13e3fc8075f86f0` bestätigt und damit gegen den vorgesehenen Remote-Stand geprüft.
+- `git status --short` blieb leer; der lokale Arbeitsbaum war sauber.
+- Keine Runtime-Datei wurde im Rahmen von ORGA-003 verändert.
+- `TEST-001` ist damit als nächster Arbeitspunkt freigegeben.

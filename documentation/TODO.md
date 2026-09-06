@@ -5,17 +5,6 @@
 
 Diese Datei enthält ausschließlich die noch offene Arbeit bis zum aktiven Versionsziel `V1.0.0`.
 
-## ORGA-003 – Lokales Arbeitsverzeichnis sauber einrichten
-
-**Status:** offen  
-**Priorität:** sehr hoch  
-**Abhängigkeit:** ORGA-002 abgeschlossen.
-
-- Lokalen Arbeitsstand für `X4Gooswin/sectorscanner` herstellen.
-- Sicherstellen, dass der lokale Arbeitsbranch `main` ist und dem vorgesehenen Remote-Stand entspricht.
-- Keine Runtime-Änderung als Teil dieses Organisationsschritts vornehmen.
-- Danach erst `TEST-001` beginnen.
-
 ## TEST-001 – Sector Overview als eigenständige Mod praktisch testen
 
 **Status:** Test erforderlich  

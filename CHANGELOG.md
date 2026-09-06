@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-09-07 – ORGA-003
+
+- established the local Sector Overview working directory at `C:\Program Files (x86)\Steam\steamapps\common\X4 Foundations\extensions\sectorscanner`
+- cloned `X4Gooswin/sectorscanner` directly into the empty target directory on branch `main`
+- verified local branch `main` and local HEAD `7c4bbdcdbed888dc24c0249ea13e3fc8075f86f0` against the intended remote state
+- verified a clean local working tree with `git status --short`
+- completed ORGA-003 without changing any runtime file
+- advanced the active project focus to TEST-001
+
 ## 2026-09-07 – ORGA-002
 
 - upgraded `WORKFLOW_BOOTSTRAP.md` to central workflow V3.1.0 at `698d56838ae71d29e5a09ec95911c82ec9c92337`

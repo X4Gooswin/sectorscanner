@@ -6,8 +6,8 @@
 ## Aktueller Steuerungsstand
 
 **Aktives Versionsziel:** `V1.0.0`.  
-**Aktueller Fokus:** `ORGA-003 – lokales Sector-Overview-Arbeitsverzeichnis sauber einrichten`.  
-**Nächster projektweiter Arbeitsschritt:** Lokalen Arbeitsstand aus `X4Gooswin/sectorscanner` sauber herstellen und gegen `main` prüfen; erst danach `TEST-001` praktisch durchführen.
+**Aktueller Fokus:** `TEST-001 – Sector Overview als eigenständige Mod praktisch testen`.  
+**Nächster projektweiter Arbeitsschritt:** Eigenständige Extension in X4 laden und den vorgesehenen praktischen Modtest durchführen; Veröffentlichung erst nach bestandenem `TEST-001`.
 
 ---
 
@@ -29,14 +29,15 @@ Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separater Sec
 
 **ORGA-001:** Workflow-Bootstrap und zentrale Projektsteuerung wurden ursprünglich für Workflow V2.0.0 eingerichtet.  
 **ORGA-002:** Projektworkflow am 07.09.2026 kontrolliert auf V3.1.0 / Commit `698d56838ae71d29e5a09ec95911c82ec9c92337` aktualisiert; Bootstrap-Alleinzuständigkeit, Architektur/Roadmap/Navigationsstruktur und deterministische Debug-Infrastruktur eingerichtet. Bestehende Runtime-Dateien wurden dabei nicht verändert.  
+**ORGA-003:** Lokales Arbeitsverzeichnis `C:\Program Files (x86)\Steam\steamapps\common\X4 Foundations\extensions\sectorscanner` am 07.09.2026 aus `X4Gooswin/sectorscanner` hergestellt. Lokaler Branch `main`, lokaler HEAD `7c4bbdcdbed888dc24c0249ea13e3fc8075f86f0` und sauberer Arbeitsbaum wurden verifiziert; keine Runtime-Datei wurde verändert.  
 **Fast Path:** nicht projektspezifisch aktiviert; bis zu einer späteren ausdrücklichen Einrichtung gilt der vollständige Startpfad des gepinnten Workflows.
 
 ---
 
 ## Verbindliche Arbeitsreihenfolge bis V1.0.0
 
-1. `ORGA-003` – lokales Arbeitsverzeichnis sauber einrichten.
-2. `TEST-001` – Sector Overview als eigenständige Mod praktisch testen.
+1. `ORGA-003` – abgeschlossen: lokales Arbeitsverzeichnis sauber eingerichtet.
+2. `TEST-001` – aktueller Fokus: Sector Overview als eigenständige Mod praktisch testen.
 3. `TODO-001` – Sector Overview veröffentlichen.
 4. `TODO-002` – nach Veröffentlichung die reale `ws_ZAHL` in der dann tatsächlich zuständigen Projektdatei eintragen; die zuständige Datei wird nicht vorab geraten.
 5. `ORGA-004` – den bestätigten Veröffentlichungsstand als unveränderlichen Branch `V1.0.0` ablegen.
