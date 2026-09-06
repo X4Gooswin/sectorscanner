@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-07 – sync metadata correction
+
+- added `sync="false"` to the root `<content>` element in `content.xml`
+- no other runtime behavior was changed
+
 ## 2026-09-07 – ORGA-003
 
 - established the local Sector Overview working directory at `C:\Program Files (x86)\Steam\steamapps\common\X4 Foundations\extensions\sectorscanner`
