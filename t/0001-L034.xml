@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="34">
+  <page id="987656" title="Sector Overview" descr="Sector Overview">
+    <t id="1">Sector Overview</t>
+    <t id="200">Actividad del sector</t>
+    <t id="201">ACTIVADO</t>
+    <t id="202">DESACTIVADO</t>
+    <t id="203">Categoría</t>
+    <t id="204">Naves</t>
+    <t id="205">Estaciones</t>
+    <t id="206">Minas/Torretas</t>
+    <t id="207">Cápsulas de escape</t>
+    <t id="208">Relación</t>
+    <t id="209">Todos</t>
+    <t id="210">Propios</t>
+    <t id="211">Neutrales</t>
+    <t id="212">Enemigos</t>
+    <t id="213">Ordenar</t>
+    <t id="214">Tamaño</t>
+    <t id="215">Nombre</t>
+    <t id="216">Tipo</t>
+    <t id="217">Distancia</t>
+    <t id="218">No hay naves visibles</t>
+    <t id="219">No hay estaciones visibles</t>
+    <t id="220">No hay minas/torretas enemigas visibles</t>
+    <t id="221">No hay cápsulas de escape visibles</t>
+    <t id="222">Arriba</t>
+    <t id="223">Abajo</t>
+    <t id="224">Estación</t>
+    <t id="225">Mina</t>
+    <t id="226">Torreta láser</t>
+    <t id="227">Cápsula de escape</t>
+    <t id="230">Vista del sector</t>
+    <t id="231">Muestra u oculta por completo la vista del sector en el HUD de la cabina.</t>
+  </page>
+</language>
