@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="44">
+  <page id="987656" title="Sector Overview" descr="Sector Overview">
+    <t id="1">Sector Overview</t>
+    <t id="200">Sector Activity</t>
+    <t id="201">ON</t>
+    <t id="202">OFF</t>
+    <t id="203">Category</t>
+    <t id="204">Ships</t>
+    <t id="205">Stations</t>
+    <t id="206">Mines/Towers</t>
+    <t id="207">Escape Pods</t>
+    <t id="208">Relation</t>
+    <t id="209">All</t>
+    <t id="210">Own</t>
+    <t id="211">Neutral</t>
+    <t id="212">Enemies</t>
+    <t id="213">Sort</t>
+    <t id="214">Size</t>
+    <t id="215">Name</t>
+    <t id="216">Type</t>
+    <t id="217">Distance</t>
+    <t id="218">No visible ships</t>
+    <t id="219">No visible stations</t>
+    <t id="220">No visible mines/enemy towers</t>
+    <t id="221">No visible escape pods</t>
+    <t id="222">Up</t>
+    <t id="223">Down</t>
+    <t id="224">Station</t>
+    <t id="225">Mine</t>
+    <t id="226">Laser Tower</t>
+    <t id="227">Escape Pod</t>
+    <t id="230">Sector Overview</t>
+    <t id="231">Shows or hides the sector overview completely in the cockpit HUD.</t>
+  </page>
+</language>
