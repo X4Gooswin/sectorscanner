@@ -9,6 +9,7 @@
 # - loescht aeltere Tests nur als vollstaendige Debug-Artefakte
 # - fuehrt keine KI-/API-Analyse aus
 # - automatische Git-Aktionen sind ausschliesslich auf main und fuer debug/** erlaubt
+# - auf anderen Branches bleibt die lokale Debugverarbeitung zulaessig, Git bleibt pausiert
 
 $ErrorActionPreference = "Stop"
 
@@ -250,6 +251,9 @@ function Apply-RetentionPolicy {
 
 function Sync-DebugToGitHub {
     try {
+        # Unmittelbar vor einem moeglichen Debug-Commit erneut den Remote-Stand holen.
+        if (-not (Pull-LatestRepositoryState)) { return $false }
+
         $branch = Get-CurrentAllowedBranch
         if ($null -eq $branch) { return $false }
 
@@ -291,9 +295,9 @@ function Clear-VerifiedInboxAfterPush {
 function Run-DebugCycle {
     Ensure-DebugFolders
 
-    if (-not (Pull-LatestRepositoryState)) {
-        Write-Warning "[Sector Overview] Zyklus ohne Git-Aktualisierung abgebrochen; es werden keine neuen Logs importiert."
-        return
+    $gitPrepared = Pull-LatestRepositoryState
+    if (-not $gitPrepared) {
+        Write-Warning "[Sector Overview] Git-Automatik fuer diesen Zyklus nicht verfuegbar; lokale Debugverarbeitung laeuft weiter."
     }
 
     $source = Get-LatestX4DebugLog
