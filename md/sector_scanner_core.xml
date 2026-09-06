@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mdscript name="sector_scanner_core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="md.xsd">
+  <cues>
+    <cue name="SectorScanner_ContactScanRequest_001" namespace="this" instantiate="true">
+      <conditions>
+        <event_ui_triggered screen="'SectorScanner'" control="'contacts_request'" />
+      </conditions>
+      <actions>
+        <find_ship
+          name="this.$contacts"
+          space="player.sector"
+          multiple="true"
+          isinliveview="true"
+        />
+        <find_station
+          name="this.$stationcontacts"
+          space="player.sector"
+          multiple="true"
+          known="true"
+        />
+        <find_object
+          name="this.$minecontacts"
+          space="player.sector"
+          class="class.mine"
+          multiple="true"
+          isinliveview="true"
+        />
+        <find_ship
+          name="this.$rescuecontacts"
+          space="player.sector"
+          class="class.spacesuit"
+          multiple="true"
+          isinliveview="true"
+          checkoperational="true"
+        />
+
+        <set_value name="this.$rescuecount" exact="0" />
+        <do_all exact="this.$rescuecontacts.count" counter="this.$rescuefilterindex">
+          <set_value
+            name="this.$rescuecandidate"
+            exact="this.$rescuecontacts.{this.$rescuefilterindex}"
+          />
+          <do_if value="this.$rescuecandidate.pilot and (this.$rescuecandidate.pilot != player.entity)">
+            <set_value name="this.$rescuecount" exact="this.$rescuecount + 1" />
+          </do_if>
+        </do_all>
+
+        <raise_lua_event
+          name="'SectorScanner.Contacts.Start'"
+          param="this.$contacts.count + this.$stationcontacts.count + this.$minecontacts.count + this.$rescuecount"
+        />
+
+        <do_all exact="this.$contacts.count" counter="this.$contactindex">
+          <raise_lua_event
+            name="'SectorScanner.Contacts.Item'"
+            param="this.$contacts.{this.$contactindex}"
+          />
+        </do_all>
+
+        <do_all exact="this.$stationcontacts.count" counter="this.$stationindex">
+          <raise_lua_event
+            name="'SectorScanner.Contacts.Item'"
+            param="this.$stationcontacts.{this.$stationindex}"
+          />
+        </do_all>
+
+        <do_all exact="this.$minecontacts.count" counter="this.$mineindex">
+          <raise_lua_event
+            name="'SectorScanner.Contacts.Item'"
+            param="this.$minecontacts.{this.$mineindex}"
+          />
+        </do_all>
+
+        <do_all exact="this.$rescuecontacts.count" counter="this.$rescueindex">
+          <set_value
+            name="this.$rescueitem"
+            exact="this.$rescuecontacts.{this.$rescueindex}"
+          />
+          <do_if value="this.$rescueitem.pilot and (this.$rescueitem.pilot != player.entity)">
+            <raise_lua_event
+              name="'SectorScanner.Contacts.RescueItem'"
+              param="this.$rescueitem"
+            />
+          </do_if>
+        </do_all>
+
+        <raise_lua_event
+          name="'SectorScanner.Contacts.RescueCount'"
+          param="this.$rescuecount"
+        />
+        <raise_lua_event
+          name="'SectorScanner.Contacts.End'"
+          param="this.$contacts.count + this.$stationcontacts.count + this.$minecontacts.count + this.$rescuecount"
+        />
+
+        <remove_value name="this.$contacts" />
+        <remove_value name="this.$stationcontacts" />
+        <remove_value name="this.$minecontacts" />
+        <remove_value name="this.$rescuecontacts" />
+        <remove_value name="this.$rescuecount" />
+        <remove_value name="this.$rescuecandidate" />
+        <remove_value name="this.$rescueitem" />
+      </actions>
+    </cue>
+  </cues>
+</mdscript>
