@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-07 – ORGA-002
+
+- upgraded `WORKFLOW_BOOTSTRAP.md` to central workflow V3.1.0 at `698d56838ae71d29e5a09ec95911c82ec9c92337`
+- made the project bootstrap the explicit sole source of the Sector Overview workflow pin
+- added architecture, roadmap and documentation navigation for the standalone mod
+- replaced the obsolete empty-project TODO state with the known ordered work through the planned V1.0.0 snapshot
+- registered ORGA-003, TEST-001, TODO-001, TODO-002 and ORGA-004 as the remaining ordered work
+- added deterministic local debug log filtering, retention and narrowly scoped automatic `debug/**` synchronization on `main`
+- no AI/API analysis is part of the debug workflow
+- no existing runtime file was changed by ORGA-002
+
 ## 2026-09-06 – ORGA-001
 
 - established `WORKFLOW_BOOTSTRAP.md` pinned to central workflow V2.0.0 at `8ba058aef8b0ffe06c3debf0dbb957e658fad43e`

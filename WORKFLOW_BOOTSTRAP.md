@@ -17,11 +17,13 @@ project:
 ```yaml
 workflow:
   repository: "X4Gooswin/x4_modding_workflow"
-  version: "V2.0.0"
-  commit_sha: "8ba058aef8b0ffe06c3debf0dbb957e658fad43e"
+  version: "V3.1.0"
+  commit_sha: "698d56838ae71d29e5a09ec95911c82ec9c92337"
 ```
 
 `version` und `commit_sha` sind gemeinsam verbindlich. Eine neuere Workflow-Version wird nicht automatisch übernommen.
+
+**Ausschließlich dieser Bootstrap definiert den für Sector Overview verbindlichen Workflow-Pin.** Chatübergaben, Starttexte, Zusammenfassungen, frühere Gesprächsinhalte oder ein aktuellerer Stand des Workflow-Repositories dürfen Version oder Commit-SHA nicht ersetzen.
 
 ## 3. Projektspezifische Regeln und Abweichungen
 
@@ -32,7 +34,10 @@ project_rules:
   automatic_exceptions_declared: true
 ```
 
-Die automatische Ausnahme ist ausschließlich der in `documentation/PROJECT_RULES.md` eng begrenzte Fehler-Rollback innerhalb einer bereits freigegebenen Änderungseinheit.
+Die ausdrücklich dokumentierten automatischen Ausnahmen stehen ausschließlich in `documentation/PROJECT_RULES.md`:
+
+- Fehler-Rollback innerhalb einer bereits freigegebenen Änderungseinheit,
+- deterministischer Sector-Overview-Debug-Watcher für den dort eng begrenzten Debug-/Git-Ablauf.
 
 ## 4. Projektquellen
 
@@ -43,10 +48,10 @@ sources:
   todo_done: "documentation/TODO_DONE.md"
   error_log: "documentation/ERROR_LOG.md"
   measures_history: none
-  architecture: none
-  roadmap: none
+  architecture: "documentation/ARCHITECTURE.md"
+  roadmap: "documentation/ROADMAP.md"
   test_plan: "documentation/TEST_PLAN.md"
-  documentation_navigation: none
+  documentation_navigation: "documentation/README.md"
 ```
 
 ## 5. Optionale technische Quellen
@@ -71,20 +76,25 @@ technical_sources:
     - "t/0001-L081.xml"
     - "t/0001-L082.xml"
     - "t/0001-L086.xml"
-  debug_logs: []
+  debug_logs:
+    - "debug/"
 ```
 
 Technische Quellen werden nur bei Relevanz für den aktuellen Arbeitspunkt gelesen.
 
-## 6. Quellenhierarchie
+## 6. Fast Path
+
+Der zentrale Workflow V3.1.0 stellt einen optionalen Fast Path bereit. Sector Overview hat mit diesem Organisationsstand **keine projektspezifischen Fast-Path-Artefakte aktiviert**. Solange kein gültiger projektspezifischer Fast Path eingerichtet und verifiziert wurde, gilt der vollständige Startpfad des gepinnten Workflows.
+
+## 7. Quellenhierarchie
 
 1. exakt gepinnter zentraler Workflow,
 2. ausdrücklich dokumentierte projektspezifische Ergänzungen/Abweichungen/Ausnahmen,
 3. projektspezifische Fach- und Steuerdokumente.
 
-## 7. Validierungsstand
+## 8. Validierungsstand
 
-- Workflow-Repository, Version und exakter Commit wurden vor Einrichtung dieses Bootstraps geprüft.
+- Workflow-Repository, Version V3.1.0 und exakter Commit `698d56838ae71d29e5a09ec95911c82ec9c92337` wurden vor diesem Upgrade geprüft.
 - Projekt-Repository und Branch `main` wurden geprüft.
-- Die verpflichtenden Projektquellen werden mit diesem Organisationsstand angelegt.
-- Nicht verwendete optionale Einzelquellen sind als `none`, nicht verwendete technische Kategorien als `[]` gekennzeichnet.
+- Der Runtime-Ausgangsstand `5c504e27450844834ac09e6b1e1ab082af6fa350` wurde als Basis dieser Organisationsarbeit verwendet.
+- Die bekannten nächsten Schritte bis zum vorgesehenen V1.0.0-Snapshot sind in Projektstatus, TODO und Roadmap eindeutig gesichert.

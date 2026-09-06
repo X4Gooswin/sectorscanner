@@ -5,27 +5,40 @@
 
 ## Aktueller Steuerungsstand
 
-**Aktives Versionsziel:** keines.  
-**Aktueller Fokus:** keiner.  
-**Nächster projektweiter Arbeitsschritt:** Kein aktiver Sector-Overview-Arbeitsschritt. Veteran Ships und dort TEST A haben derzeit Vorrang.
+**Aktives Versionsziel:** `V1.0.0`.  
+**Aktueller Fokus:** `ORGA-003 – lokales Sector-Overview-Arbeitsverzeichnis sauber einrichten`.  
+**Nächster projektweiter Arbeitsschritt:** Lokalen Arbeitsstand aus `X4Gooswin/sectorscanner` sauber herstellen und gegen `main` prüfen; erst danach `TEST-001` praktisch durchführen.
 
 ---
 
-## Bekannter stabiler Ausgangsstand
+## Bekannter stabiler Runtime-Ausgangsstand
 
 - Repository: `X4Gooswin/sectorscanner`
 - Branch: `main`
-- Ausgangscommit vor Einrichtung der Projektsteuerung: `ee4a953b573797ae9cf30c62c54e2c011f3bfb2c`
-- Commit-Nachricht: `SECTOR-001 – preserve exact staged HUD runtime`
+- Runtime-Ausgangscommit vor der V3.1.0-Organisationsarbeit: `5c504e27450844834ac09e6b1e1ab082af6fa350`
+- Vorheriger erhaltener Split-Basiscommit: `ee4a953b573797ae9cf30c62c54e2c011f3bfb2c`
 - Extension-Name: `Sector Overview`
 - Extension-ID: `gooswin_sector_overview`
 - Abhängigkeiten laut `content.xml`: SirNukes Mod Support APIs und UI Extensions and HUD.
 
-Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separater Sector Overview war erfolgreich. Dieser historische Nachweis wird nicht als neuer Testlauf unter einer neuen TEST-ID umetikettiert.
+Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separater Sector Overview war erfolgreich. Dieser historische Nachweis wird nicht als neuer Testlauf unter `TEST-001` umetikettiert.
 
 ---
 
 ## Organisationsstand
 
-**ORGA-001:** Workflow-Bootstrap und zentrale Projektsteuerung wurden für den gepinnten Workflow V2.0.0 eingerichtet.  
-**Priorität zwischen Projekten:** Veteran Ships vor Sector Overview.
+**ORGA-001:** Workflow-Bootstrap und zentrale Projektsteuerung wurden ursprünglich für Workflow V2.0.0 eingerichtet.  
+**ORGA-002:** Projektworkflow am 07.09.2026 kontrolliert auf V3.1.0 / Commit `698d56838ae71d29e5a09ec95911c82ec9c92337` aktualisiert; Bootstrap-Alleinzuständigkeit, Architektur/Roadmap/Navigationsstruktur und deterministische Debug-Infrastruktur eingerichtet. Bestehende Runtime-Dateien wurden dabei nicht verändert.  
+**Fast Path:** nicht projektspezifisch aktiviert; bis zu einer späteren ausdrücklichen Einrichtung gilt der vollständige Startpfad des gepinnten Workflows.
+
+---
+
+## Verbindliche Arbeitsreihenfolge bis V1.0.0
+
+1. `ORGA-003` – lokales Arbeitsverzeichnis sauber einrichten.
+2. `TEST-001` – Sector Overview als eigenständige Mod praktisch testen.
+3. `TODO-001` – Sector Overview veröffentlichen.
+4. `TODO-002` – nach Veröffentlichung die reale `ws_ZAHL` in der dann tatsächlich zuständigen Projektdatei eintragen; die zuständige Datei wird nicht vorab geraten.
+5. `ORGA-004` – den bestätigten Veröffentlichungsstand als unveränderlichen Branch `V1.0.0` ablegen.
+
+Die Reihenfolge ist verbindlich. Ein nachfolgender Punkt beginnt erst, wenn sein Vorgänger abgeschlossen oder ausdrücklich neu entschieden wurde.

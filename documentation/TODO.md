@@ -3,4 +3,56 @@
 **Status:** Aktiv.  
 **Zentrale Regelquelle:** `workflow/PROJECT_CONTROL.md`
 
-Aktuell bestehen keine offenen Sector-Overview-Arbeitspunkte. Das Projekt bleibt gegenüber Veteran Ships sekundär, bis ein neuer Arbeitspunkt ausdrücklich eröffnet wird.
+Diese Datei enthält ausschließlich die noch offene Arbeit bis zum aktiven Versionsziel `V1.0.0`.
+
+## ORGA-003 – Lokales Arbeitsverzeichnis sauber einrichten
+
+**Status:** offen  
+**Priorität:** sehr hoch  
+**Abhängigkeit:** ORGA-002 abgeschlossen.
+
+- Lokalen Arbeitsstand für `X4Gooswin/sectorscanner` herstellen.
+- Sicherstellen, dass der lokale Arbeitsbranch `main` ist und dem vorgesehenen Remote-Stand entspricht.
+- Keine Runtime-Änderung als Teil dieses Organisationsschritts vornehmen.
+- Danach erst `TEST-001` beginnen.
+
+## TEST-001 – Sector Overview als eigenständige Mod praktisch testen
+
+**Status:** Test erforderlich  
+**Priorität:** hoch  
+**Abhängigkeit:** ORGA-003 abgeschlossen.
+
+- Eigenständige Extension in X4 laden.
+- Erkennung, Abhängigkeiten, UI/MD/Lua und Debuglog prüfen.
+- Filter, Sortierung, Paging und Targeting praktisch prüfen.
+- Extension-only-/Workshop-only-Konformität bestätigen.
+- Ergebnis dauerhaft in `documentation/TEST_PLAN.md` nachführen.
+
+## TODO-001 – Sector Overview veröffentlichen
+
+**Status:** offen  
+**Priorität:** hoch  
+**Abhängigkeit:** TEST-001 bestanden.
+
+- Erst nach bestandenem eigenständigem Modtest veröffentlichen.
+- Veröffentlichungsdaten und resultierenden stabilen Stand dokumentieren.
+
+## TODO-002 – Echte Workshop-ID übernehmen
+
+**Status:** offen  
+**Priorität:** hoch  
+**Abhängigkeit:** TODO-001 abgeschlossen.
+
+- Nach Veröffentlichung die tatsächlich vergebene Steam-Workshop-ID als `ws_ZAHL` übernehmen.
+- Die zu ändernde Projektdatei wird anhand des tatsächlichen Veröffentlichungs-/X4-Stands bestimmt; sie wird nicht vorab angenommen.
+- Danach den resultierenden Stand erneut prüfen.
+
+## ORGA-004 – V1.0.0 als unveränderlichen Branch sichern
+
+**Status:** offen  
+**Priorität:** hoch  
+**Abhängigkeit:** TODO-002 abgeschlossen und veröffentlichter Stand bestätigt.
+
+- Den bestätigten Stand als Branch `V1.0.0` sichern.
+- Der Branch ist als unveränderlicher Versionssnapshot vorgesehen.
+- Die tatsächliche Branch-Erstellung unterliegt dem dann gültigen Freigabeprozess.
