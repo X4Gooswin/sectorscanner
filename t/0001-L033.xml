@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language id="33">
+  <page id="987656" title="Sector Overview" descr="Sector Overview">
+    <t id="1">Sector Overview</t>
+    <t id="200">Activité du secteur</t>
+    <t id="201">ACTIVÉ</t>
+    <t id="202">DÉSACTIVÉ</t>
+    <t id="203">Catégorie</t>
+    <t id="204">Vaisseaux</t>
+    <t id="205">Stations</t>
+    <t id="206">Mines/Tourelles</t>
+    <t id="207">Capsules de sauvetage</t>
+    <t id="208">Relation</t>
+    <t id="209">Tous</t>
+    <t id="210">Possédés</t>
+    <t id="211">Neutres</t>
+    <t id="212">Ennemis</t>
+    <t id="213">Trier</t>
+    <t id="214">Taille</t>
+    <t id="215">Nom</t>
+    <t id="216">Type</t>
+    <t id="217">Distance</t>
+    <t id="218">Aucun vaisseau visible</t>
+    <t id="219">Aucune station visible</t>
+    <t id="220">Aucune mine/tourelle ennemie visible</t>
+    <t id="221">Aucune capsule de sauvetage visible</t>
+    <t id="222">Haut</t>
+    <t id="223">Bas</t>
+    <t id="224">Station</t>
+    <t id="225">Mine</t>
+    <t id="226">Tourelle laser</t>
+    <t id="227">Capsule de sauvetage</t>
+    <t id="230">Vue du secteur</t>
+    <t id="231">Affiche ou masque entièrement la vue du secteur dans le HUD du cockpit.</t>
+  </page>
+</language>
