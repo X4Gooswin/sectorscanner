@@ -6,8 +6,8 @@
 ## Aktueller Steuerungsstand
 
 **Aktives Versionsziel:** `V1.0.0`.  
-**Aktueller Fokus:** `TEST-001 – Sectorscanner als eigenständige Mod praktisch testen`.  
-**Nächster projektweiter Arbeitsschritt:** Eigenständige Extension in X4 laden und den vorgesehenen praktischen Modtest durchführen; Veröffentlichung erst nach bestandenem `TEST-001`.
+**Aktueller Fokus:** `TODO-002 – echte Workshop-ID im veröffentlichten X4-Stand bestätigen`.
+**Nächster projektweiter Arbeitsschritt:** veröffentlichten Stand mit `ws_3797178164` in X4 laden und Identität sowie `sync="false"` bestätigen.
 
 ---
 
@@ -18,7 +18,8 @@
 - Runtime-Ausgangscommit vor der V3.1.0-Organisationsarbeit: `5c504e27450844834ac09e6b1e1ab082af6fa350`
 - Vorheriger erhaltener Split-Basiscommit: `ee4a953b573797ae9cf30c62c54e2c011f3bfb2c`
 - Extension-Name: `Sectorscanner`
-- Extension-ID: `sectorscanner`
+- Extension-ID vor Veröffentlichung: `sectorscanner`
+- Vergebene Workshop-ID: `ws_3797178164`
 - Abhängigkeiten laut `content.xml`: SirNukes Mod Support APIs und UI Extensions and HUD.
 
 Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separatem Sectorscanner war erfolgreich. Dieser historische Nachweis wird nicht als neuer Testlauf unter `TEST-001` umetikettiert.
@@ -37,9 +38,8 @@ Die zuvor getestete Kombination aus gesplittetem Veteran Ships und separatem Sec
 ## Verbindliche Arbeitsreihenfolge bis V1.0.0
 
 1. `ORGA-003` – abgeschlossen: lokales Arbeitsverzeichnis sauber eingerichtet.
-2. `TEST-001` – aktueller Fokus: Sectorscanner als eigenständige Mod praktisch testen.
-3. `TODO-001` – Sectorscanner veröffentlichen.
-4. `TODO-002` – nach Veröffentlichung die reale `ws_ZAHL` in der dann tatsächlich zuständigen Projektdatei eintragen; die zuständige Datei wird nicht vorab geraten.
-5. `ORGA-004` – den bestätigten Veröffentlichungsstand als unveränderlichen Branch `V1.0.0` ablegen.
-
+2. `TEST-001` – abgeschlossen: eigenständiger praktischer Modtest bestanden.
+3. `TODO-001` – abgeschlossen: Steam-Workshop-Eintrag `3797178164` angelegt.
+4. `TODO-002` – aktueller Fokus: `ws_3797178164` im veröffentlichten X4-Stand bestätigen.
+5. `ORGA-004` – anschließend den bestätigten Veröffentlichungsstand als unveränderlichen Branch `V1.0.0` ablegen.
 Die Reihenfolge ist verbindlich. Ein nachfolgender Punkt beginnt erst, wenn sein Vorgänger abgeschlossen oder ausdrücklich neu entschieden wurde.

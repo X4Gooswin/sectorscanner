@@ -36,3 +36,26 @@
 - `git status --short` blieb leer; der lokale Arbeitsbaum war sauber.
 - Keine Runtime-Datei wurde im Rahmen von ORGA-003 verändert.
 - `TEST-001` ist damit als nächster Arbeitspunkt freigegeben.
+## TEST-001 – Eigenständiger Sectorscanner-Modtest bestanden
+
+**Status:** abgeschlossen
+**Abschluss:** 07.09.2026
+
+- Praktischer Funktionstest auf Commit `51b2e557acc04957d112f123ea851816ef099525` durchgeführt.
+- X4-Version `9.00 (611726)`.
+- Filter, Sortierung, Paging, Navigation und Klick-Targeting funktionierten wie vorgesehen.
+- Erforderliche Abhängigkeiten waren aktiv.
+- Keine bestätigten projektbezogenen XML-/MD-/Lua-/UI-Fehler im geprüften Debuglog.
+- Extension-only-/Workshop-only-Konformität bestätigt.
+- Der folgende Identitätscommit `b34ddecfa93a55d7c3fefafe832fcaf25c7f65e5` änderte keine MD-/Lua-/UI-Funktionslogik.
+
+## TODO-001 – Sectorscanner erstmals veröffentlicht
+
+**Status:** abgeschlossen
+**Abschluss:** 07.09.2026
+
+- Sectorscanner erfolgreich im Steam Workshop angelegt.
+- Steam-Workshop-ID: `3797178164`.
+- Resultierende Extension-ID: `ws_3797178164`.
+- Workshop-Eintrag blieb zunächst verborgen.
+- `TODO-002` bleibt bis zur abschließenden X4-Prüfung des Workshop-ID-Stands offen.

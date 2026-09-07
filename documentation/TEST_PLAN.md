@@ -8,16 +8,16 @@
 **Projekt:** Sectorscanner  
 **Deklarierter Entwicklungsbranch:** `main`  
 **Aktives Versionsziel:** `V1.0.0`  
-**Relevante X4-Version:** technisch unbestätigt
+**Relevante X4-Version:** 9.00 (611726)
 
 ### Fundament-/Basistests
 
-- [ ] Extension wird im aktuellen Zielstand technisch erkannt.
-- [ ] `content.xml`, MD-Dateien, `ui.xml` und Lua sind für den getesteten Stand strukturell/technisch gültig.
-- [ ] X4 startet mit aktivierter Extension und den erforderlichen Abhängigkeiten.
-- [ ] Keine projektverursachten relevanten MD-/Lua-/UI-Fehler im Debuglog.
-- [ ] Filter, Sortierung, Paging und Targeting der Cockpit-Sektorübersicht funktionieren im vorgesehenen Teststand.
-- [ ] Extension-only-/Workshop-only-Konformität ist für den getesteten Stand bestätigt.
+- [x] Extension wird im aktuellen Zielstand technisch erkannt.
+- [x] `content.xml`, MD-Dateien, `ui.xml` und Lua sind für den getesteten Stand strukturell/technisch gültig.
+- [x] X4 startet mit aktivierter Extension und den erforderlichen Abhängigkeiten.
+- [x] Keine projektverursachten relevanten MD-/Lua-/UI-Fehler im Debuglog.
+- [x] Filter, Sortierung, Paging und Targeting der Cockpit-Sektorübersicht funktionieren im vorgesehenen Teststand.
+- [x] Extension-only-/Workshop-only-Konformität ist für den getesteten Stand bestätigt.
 
 Historischer Hinweis: Die Kombination aus gesplittetem Veteran Ships und separat installiertem Sectorscanner wurde vor Einrichtung dieses Testregisters erfolgreich getestet. Dieser Alt-Nachweis erhält rückwirkend keine neue TEST-ID und ersetzt `TEST-001` nicht.
 
@@ -25,7 +25,7 @@ Historischer Hinweis: Die Kombination aus gesplittetem Veteran Ships und separat
 
 ## 2. TEST-001 – Eigenständiger Sectorscanner-Modtest
 
-**Status:** Test erforderlich  
+**Status:** bestanden
 **Abhängigkeit:** `ORGA-003` abgeschlossen.  
 **Testgegenstand:** Der eigenständige Sectorscanner-Stand auf `main` als Vorbereitung auf Veröffentlichung und V1.0.0.
 
@@ -56,38 +56,35 @@ Historischer Hinweis: Die Kombination aus gesplittetem Veteran Ships und separat
    - Runtime funktioniert aus der eigenen Extension heraus.
    - Keine unzulässige Vanilla-Ersetzung.
 
-### Testlauf-Vorlage
+### Testlauf – TEST-001
 
-**Getesteter Commit:** `<SHA>`  
-**Datum/Projektreferenz:** `<Datum/Referenz>`  
-**X4-Version:** `<Version oder technisch unbestätigt>`  
-**Modkombination/Abhängigkeiten:** `<Stand>`
+**Getesteter Funktionscommit:** `51b2e557acc04957d112f123ea851816ef099525`
+**Datum:** 07.09.2026
+**X4-Version:** `9.00 (611726)`
+**Abhängigkeiten:** SirNukes Mod Support APIs und UI Extensions and HUD aktiv
 
-#### Ausgeführte Schritte
+#### Ausgeführte Prüfung
 
-1. `<Schritt>`
-2. `<Schritt>`
-3. `<Schritt>`
+1. Eigenständige Extension geladen und technische Erkennung geprüft.
+2. Filter, Sortierung, Paging und Navigation praktisch geprüft.
+3. Klick/Targeting praktisch geprüft.
+4. Aktivieren/Deaktivieren sowie Ziel- und Sektorwechsel geprüft.
+5. Debuglog auf Sectorscanner-bezogene XML-/MD-/Lua-/UI-Fehler geprüft.
+6. Extension-only-/Workshop-only-Konformität geprüft.
 
-#### Beobachtetes Ergebnis
+#### Ergebnis
 
-`<Ergebnis>`
+Alle vorgesehenen Funktionen arbeiteten wie vorgesehen. Im geprüften Debuglog wurden keine bestätigten Sectorscanner-bezogenen XML-/MD-/Lua-/UI-Fehler festgestellt.
 
-#### Teststatus
+Der spätere Commit `b34ddecfa93a55d7c3fefafe832fcaf25c7f65e5` änderte ausschließlich die Extension-Identität und keine MD-/Lua-/UI-Funktionslogik.
 
-`<bestanden / nicht bestanden / teilweise bestanden>`
+**Teststatus:** `bestanden`
 
-#### Offene Fehler
+**Offene Fehler:** keine
 
-- `<FEHLER-ID oder keine>`
+**Folgearbeit:** `TODO-001` Veröffentlichung; anschließend `TODO-002` Workshop-ID-Prüfung.
 
-#### Offene Folgearbeit
-
-- `<ID oder keine>`
-
-#### Extension-only-/Workshop-only-Konformität
-
-`<bestätigt / nicht bestätigt>`
+**Extension-only-/Workshop-only-Konformität:** bestätigt
 
 ---
 

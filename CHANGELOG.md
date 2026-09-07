@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-07 – TEST-001 / Workshop publication
+
+- completed practical TEST-001 successfully on functional commit `51b2e557acc04957d112f123ea851816ef099525`
+- confirmed X4 `9.00 (611726)`, required dependencies, filters, sorting, paging and click-targeting
+- confirmed no project-caused relevant XML/MD/Lua/UI error in the evaluated debug log
+- published Sectorscanner to Steam Workshop as item `3797178164`
+- adopted Workshop extension id `ws_3797178164`
+- added `preview.jpg` as the controlled Workshop preview asset
+- TODO-002 remains open until the Workshop-id state is confirmed in X4
+- no MD, Lua or UI functional logic was changed
 ## 2026-09-07 – extension identity correction
 
 - changed the extension id from `gooswin_sector_overview` to `sectorscanner`
