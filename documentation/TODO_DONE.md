@@ -36,9 +36,10 @@
 - `git status --short` blieb leer; der lokale Arbeitsbaum war sauber.
 - Keine Runtime-Datei wurde im Rahmen von ORGA-003 verändert.
 - `TEST-001` ist damit als nächster Arbeitspunkt freigegeben.
+
 ## TEST-001 – Eigenständiger Sectorscanner-Modtest bestanden
 
-**Status:** abgeschlossen
+**Status:** abgeschlossen  
 **Abschluss:** 07.09.2026
 
 - Praktischer Funktionstest auf Commit `51b2e557acc04957d112f123ea851816ef099525` durchgeführt.
@@ -51,11 +52,34 @@
 
 ## TODO-001 – Sectorscanner erstmals veröffentlicht
 
-**Status:** abgeschlossen
+**Status:** abgeschlossen  
 **Abschluss:** 07.09.2026
 
 - Sectorscanner erfolgreich im Steam Workshop angelegt.
 - Steam-Workshop-ID: `3797178164`.
 - Resultierende Extension-ID: `ws_3797178164`.
 - Workshop-Eintrag blieb zunächst verborgen.
-- `TODO-002` bleibt bis zur abschließenden X4-Prüfung des Workshop-ID-Stands offen.
+- `preview.jpg` als kontrolliertes Workshop-Preview-Asset in den Projektstand übernommen.
+
+## TODO-002 – Echte Workshop-ID im veröffentlichten X4-Stand bestätigt
+
+**Status:** abgeschlossen  
+**Abschluss:** 07.09.2026
+
+- Steam-Workshop-Eintrag `3797178164` abonniert.
+- Den dadurch erzeugten Workshop-Modordner geprüft; der Stand war sauber.
+- X4 mit der abonnierten Workshop-Fassung gestartet.
+- Sectorscanner wurde sauber geladen und arbeitete wie vorgesehen.
+- Damit ist die reale Extension-ID `ws_3797178164` im tatsächlichen veröffentlichten X4-Stand praktisch bestätigt.
+- Workshop-Seite: `https://steamcommunity.com/sharedfiles/filedetails/?id=3797178164`.
+- Screenshots wurden erstellt, bearbeitet und in den Workshop-Eintrag hochgeladen.
+
+## ORGA-004 – V1.0.0 als unveränderlichen Snapshot gesichert
+
+**Status:** abgeschlossen  
+**Abschluss:** 07.09.2026
+
+- Der bestätigte, veröffentlichte und praktisch getestete Stand wurde als Versionsziel `V1.0.0` abgeschlossen.
+- Der Abschlussstand wird als Branch `V1.0.0` direkt aus dem Abschlusscommit gesichert.
+- Der Branch `V1.0.0` ist als unveränderlicher Versionssnapshot vorgesehen und wird nicht für weitere Entwicklung fortgeschrieben.
+- Zukünftige Entwicklung erfolgt außerhalb dieses Snapshots auf einem neu kontrollierten Arbeitsstand.
